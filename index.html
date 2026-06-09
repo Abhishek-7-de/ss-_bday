@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For Someone Special ✦</title>
+    <meta name="description" content="A little something for someone who deserves the world.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Music Player - Fixed -->
+    <div id="music-player" class="music-player">
+        <button id="music-toggle" class="music-btn" aria-label="Toggle Music">
+            <div class="music-icon playing">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </button>
+        <span class="song-label">For A Reason — Karan Aujla</span>
+    </div>
+
+    <!-- Floating Elements Container -->
+    <div id="floating-elements" class="floating-elements"></div>
+
+    <!-- SECTION 0: Envelope Opening -->
+    <section id="envelope-section" class="envelope-section">
+        <div class="envelope-container">
+            <div class="envelope-instruction">
+                <span class="caveat">you have mail ✉</span>
+            </div>
+            <div id="envelope" class="envelope" role="button" tabindex="0" aria-label="Open envelope">
+                <div class="envelope-back"></div>
+                <div class="envelope-letter" id="envelope-letter">
+                    <p class="letter-text caveat">
+                        For someone who deserves way more than a website…<br><br>
+                        but let's start here.<br><br>
+                        <span class="letter-small">tap to keep going ↓</span>
+                    </p>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap" id="envelope-flap"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: Hero -->
+    <section id="hero" class="section hero hidden-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <div class="sparkle-container">
+                <span class="sparkle">✦</span>
+                <span class="sparkle">✦</span>
+                <span class="sparkle">✦</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="line line-1">Happy Birthday</span>
+                <span class="line line-2 caveat">SS</span>
+            </h1>
+            <p class="hero-subtitle">June 10, 2026</p>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Opening Note -->
+    <section id="opening-note" class="section note-section hidden-section">
+        <div class="note-card glass">
+            <div class="note-pin"></div>
+            <p class="caveat note-text">
+                So here's the thing —<br><br>
+                We've never met. Not once. Not in a cafe, not on some random street, not even by accident.<br><br>
+                Just texts. Just words on a screen. But somehow... those words matter. A lot.<br><br>
+                Today's your day. And even from here, wherever "here" is compared to "there"... <br>
+                I wanted to do <em>something</em>.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Photo Gallery - Polaroid Style -->
+    <section id="gallery" class="section gallery-section hidden-section">
+        <h2 class="section-title">a few reasons why the internet is worth it</h2>
+        <div class="polaroid-grid">
+            <div class="polaroid" style="--rotate: -3deg; --delay: 0.1s">
+                <div class="polaroid-img-wrap">
+                    <img src="assets/photo5.jpeg" alt="" loading="lazy">
+                </div>
+                <p class="polaroid-caption caveat">that smile tho 🌊</p>
+            </div>
+            <div class="polaroid" style="--rotate: 2deg; --delay: 0.2s">
+                <div class="polaroid-img-wrap">
+                    <img src="assets/photo1.jpeg" alt="" loading="lazy">
+                </div>
+                <p class="polaroid-caption caveat">okay this one's unfair</p>
+            </div>
+            <div class="polaroid" style="--rotate: -1deg; --delay: 0.3s">
+                <div class="polaroid-img-wrap">
+                    <img src="assets/photo2.jpeg" alt="" loading="lazy">
+                </div>
+                <p class="polaroid-caption caveat">main character energy fr</p>
+            </div>
+            <div class="polaroid" style="--rotate: 3deg; --delay: 0.4s">
+                <div class="polaroid-img-wrap">
+                    <img src="assets/photo3.jpeg" alt="" loading="lazy">
+                </div>
+                <p class="polaroid-caption caveat">runway or mountains — you own it</p>
+            </div>
+            <div class="polaroid" style="--rotate: -2deg; --delay: 0.5s">
+                <div class="polaroid-img-wrap">
+                    <img src="assets/photo4.jpeg" alt="" loading="lazy">
+                </div>
+                <p class="polaroid-caption caveat">art. that's it. that's the caption.</p>
+            </div>
+            <div class="polaroid" style="--rotate: 1deg; --delay: 0.6s">
+                <div class="polaroid-img-wrap">
+                    <img src="assets/photo6.jpeg" alt="" loading="lazy">
+                </div>
+                <p class="polaroid-caption caveat">you + party lights = trouble 🔥</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: The "Things I Notice" Notes -->
+    <section id="notes" class="section notes-section hidden-section">
+        <h2 class="section-title">things I've noticed from behind a screen</h2>
+        <div class="sticky-notes">
+            <div class="sticky-note" style="--bg: #fff8e1; --rotate: -2deg">
+                <p class="caveat">You're funnier than you think. Like genuinely. Those random 2am replies? Comedy gold.</p>
+            </div>
+            <div class="sticky-note" style="--bg: #fce4ec; --rotate: 1.5deg">
+                <p class="caveat">The way you carry yourself in photos? It's not even trying hard. It's just... you.</p>
+            </div>
+            <div class="sticky-note" style="--bg: #e8f5e9; --rotate: -1deg">
+                <p class="caveat">I still remember when you said something really real one time. Can't forget it. Won't.</p>
+            </div>
+            <div class="sticky-note" style="--bg: #e3f2fd; --rotate: 2deg">
+                <p class="caveat">You make even "seen" feel like a whole conversation sometimes. That's a talent btw.</p>
+            </div>
+            <div class="sticky-note" style="--bg: #f3e5f5; --rotate: -0.5deg">
+                <p class="caveat">I've imagined meeting you. Like actually. And that's not something I tell people.</p>
+            </div>
+            <div class="sticky-note" style="--bg: #fff3e0; --rotate: 1deg">
+                <p class="caveat">The internet gave me a lot of things. The best one? Knowing you exist somewhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Video Section -->
+    <section id="videos" class="section video-section hidden-section">
+        <h2 class="section-title">moving pictures > still pictures</h2>
+        <div class="video-container">
+            <div class="video-card glass">
+                <video controls playsinline preload="metadata" poster="">
+                    <source src="assets/video1.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption caveat">exhibit A 🎬</p>
+            </div>
+            <div class="video-card glass">
+                <video controls playsinline preload="metadata" poster="">
+                    <source src="assets/video2.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption caveat">exhibit B ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: More Photos - Masonry -->
+    <section id="more-photos" class="section more-photos-section hidden-section">
+        <h2 class="section-title">okay wait there's more</h2>
+        <div class="masonry-grid">
+            <div class="masonry-item reveal-item">
+                <img src="assets/photo7.jpeg" alt="" loading="lazy">
+            </div>
+            <div class="masonry-item reveal-item">
+                <img src="assets/photo8.jpeg" alt="" loading="lazy">
+            </div>
+            <div class="masonry-item reveal-item">
+                <img src="assets/photo9.jpeg" alt="" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: The Promise -->
+    <section id="promise" class="section promise-section hidden-section">
+        <div class="promise-card">
+            <div class="promise-icon">☽</div>
+            <p class="caveat promise-text">
+                One day, the texts will become conversations.<br>
+                The "lol" will become actual laughter.<br>
+                The emojis will become real expressions.<br><br>
+                And I'll finally get to say this in person —<br><br>
+                <em>"I'm glad I found you on the internet."</em>
+            </p>
+            <div class="promise-icon">☽</div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: Spotify Embed -->
+    <section id="song" class="section song-section hidden-section">
+        <h2 class="section-title caveat">this one's for you</h2>
+        <div class="spotify-wrap glass">
+            <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/track/0cYohCh24y1aMjJmcS9RBl?utm_source=generator&theme=0" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- SECTION 9: Final -->
+    <section id="final" class="section final-section hidden-section">
+        <div class="final-content">
+            <p class="final-small">from someone who hasn't met you yet, but already admires you way too much —</p>
+            <h2 class="final-title">
+                <span class="caveat">Happy Birthday, SS</span>
+            </h2>
+            <p class="final-small caveat">here's to the year you get everything you deserve. and then some. 🥂</p>
+            <div class="confetti-trigger" id="confetti-btn">
+                <button class="confetti-button caveat">🎂 blow the candle</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
